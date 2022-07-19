@@ -5,15 +5,15 @@ export default function createGame() {
         players: {},
         fruits: {},
         screen: {
-            width: 10,
-            height: 10
+            width: 1000,
+            height: 1000
         }
     }
 
     const observers = []
 
     function start() {
-        const frequency = 2000
+        const frequency = 10000
 
         setInterval(addFruit, frequency)
     }
@@ -95,16 +95,16 @@ export default function createGame() {
         
         const acceptedMoves = {
             ArrowUp(player) {
-                player.y = mod(state.screen.height, player.y - 1)
+                player.y = mod(state.screen.height, player.y - 10)
             },
             ArrowRight(player) {
-                player.x = mod(state.screen.width, player.x + 1)
+                player.x = mod(state.screen.width, player.x + 10)
             },
             ArrowDown(player) {
-                player.y = mod(state.screen.height, player.y + 1)
+                player.y = mod(state.screen.height, player.y + 10)
             },
             ArrowLeft(player) {
-                player.x = mod(state.screen.width, player.x - 1)
+                player.x = mod(state.screen.width, player.x - 10)
             }
         }
 
