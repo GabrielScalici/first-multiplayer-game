@@ -6,7 +6,7 @@ export default function createGame() {
         fruits: {},
         screen: {
             width: 100,
-            height: 100
+            height: 100,
         }
     }
 

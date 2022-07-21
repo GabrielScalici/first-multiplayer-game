@@ -25,7 +25,7 @@ export default function renderScreen(screen, game, requestAnimationFrame, curren
         image.addEventListener("load" , draw , false); //Remove = Empty canvas
         
         function draw() {
-            context.drawImage(image, currentPlayer.x, currentPlayer.y, 5, 5)
+            context.drawImage(image, currentPlayer.x, currentPlayer.y, 5, 10)
         }
 
         draw(); 
